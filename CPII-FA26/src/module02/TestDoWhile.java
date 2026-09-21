@@ -12,16 +12,21 @@ import java.util.Scanner;
  */
 public class TestDoWhile {
     public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        String username = null;
-        String password = null;
-        do{
-            System.out.print("Enter your user name:");
-            username = input.next();
-            System.out.print("Enter your password:");
-            password = input.next();
-        }while(!(username.equals("guest") && 
-                password.equals("guest")));
+//        Scanner input = new Scanner(System.in);
+//        String username = null;
+//        String password = null;
+//        do{
+//            System.out.print("Enter your user name:");
+//            username = input.next();
+//            System.out.print("Enter your password:");
+//            password = input.next();
+//        }while(!(username.equals("guest") && 
+//                password.equals("guest")));
         
+        int x = 5;
+        do{
+              x++;
+        }while (x <=6);
+          System.out.println(x);
     }
 }
