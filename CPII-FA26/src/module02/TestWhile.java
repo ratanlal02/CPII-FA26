@@ -43,6 +43,7 @@ public class TestWhile {
               x++;
           }
           System.out.println(x);
+          
     
     }
 }
