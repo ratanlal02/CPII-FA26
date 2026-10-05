@@ -11,6 +11,16 @@ import java.util.Arrays;
  * @author RLAL
  */
 public class OneDArray {
+    public static void printArray(int[] oneD){
+        for(int i=0; i < oneD.length; i++){
+            System.out.print(oneD[i]+" ");
+        }
+    }
+    
+    public static void sortArray(int[] oneD){
+        Arrays.sort(oneD);
+    }
+    
     public static void main(String[] args){
         int[] numbersOne = new int[5];
         // another method
@@ -19,27 +29,34 @@ public class OneDArray {
         for(int i=0; i < numbersOne.length; i++){
             numbersOne[i] = numbersTwo[i];
         }
-        for(int i=0; i < numbersOne.length; i++){
-            System.out.print(numbersOne[i]+" ");
-        }
+//        for(int i=0; i < numbersOne.length; i++){
+//            System.out.print(numbersOne[i]+" ");
+//        }
+        printArray(numbersOne);
         // Clone
         numbersOne = numbersTwo.clone();
-        for(int x:numbersOne){
-            System.out.print(x+" ");
-        }
+//        for(int x:numbersOne){
+//            System.out.print(x+" ");
+//        }
+        printArray(numbersOne);
         System.out.println("");
         // ArrayCopy
         System.arraycopy(numbersTwo, 0, numbersOne, 0, 5);
-        for(int x:numbersOne){
-            System.out.print(x+" ");
-        }
+//        for(int x:numbersOne){
+//            System.out.print(x+" ");
+//        }
+        printArray(numbersOne);
         System.out.println("");
         //Arrays.fill(numbersOne, 5);
         
-        Arrays.sort(numbersOne);
-        for(int x:numbersOne){
-            System.out.print(x+" ");
-        }
+        
+//        for(int x:numbersOne){
+//            System.out.print(x+" ");
+//        }
+        // Sorted Array
+        System.out.println("After sorting");
+        sortArray(numbersOne);
+        printArray(numbersOne);
 
     }
 }
