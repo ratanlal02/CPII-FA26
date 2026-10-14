@@ -11,8 +11,16 @@ package module04;
 public class Driver {
     
     public static void main(String[] args){
-        Student s = new Student("Jackson");
-        System.out.println(s);
+        //Student s = new Student("Jackson");
+        //System.out.println(s);
+        Dog zelda = new Dog("Zelda", "Standard Poodle", 7);
+        System.out.println(zelda.getName());
+        zelda.setName("Adi");
+        System.out.println(zelda.getName());
+        System.out.println(zelda.bark());
+        Dog d = new Dog();
+        System.out.println(d.getName());
+        
     }
     
 }
