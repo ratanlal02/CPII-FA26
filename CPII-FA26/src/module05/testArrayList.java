@@ -33,6 +33,45 @@ public class testArrayList {
         for(Integer x: numList){
             System.out.print(x+" ");
         }
+        System.out.println("");
+        // Create an object named fruitList of ArrayList
+        // of String
+        ArrayList<String> fruitList = new ArrayList<>();
+        // Add Banana, Apple, Strawberry
+        fruitList.add("Banana");
+        fruitList.add("Apple");
+        fruitList.add("Strawberry");
+        
+        // Print the fruitList
+        for(String fruit: fruitList){
+            System.out.print(fruit+" ");
+        }
+        
+        // Add your new favourite fruit at first in the list
+        fruitList.add(0, "Grapes");
+        System.out.println("");
+        // Print the fruitList
+        for(String fruit: fruitList){
+            System.out.print(fruit+" ");
+        }
+        // Remove your least favourite fruit
+        fruitList.remove(fruitList.size()-1);
+        System.out.println("");
+        // Print the fruitList
+        for(String fruit: fruitList){
+            System.out.print(fruit+" ");
+        }
+        System.out.println("");
+        // Get your second favourite fruit
+        System.out.println(fruitList.get(1));
+        
+        // Change our top favourite fruit to Mango
+        fruitList.set(0, "Mango");
+        
+        // Print the fruitList
+        for(String fruit: fruitList){
+            System.out.print(fruit+" ");
+        }
     
     }
 }

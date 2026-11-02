@@ -11,8 +11,10 @@ package module05;
 public class Main {
     public static void main(String[] args){
     
-        Calculator<Integer, Double> objCal = new Calculator<>(new Integer(5), new Double(6.5));
+        Calculator<Integer, Integer> objCal;
+        objCal = new Calculator<>(5, 5);
         System.out.println(objCal.getDataOne());
         System.out.println(objCal.getDataTwo());
+        System.out.println(objCal.add());
     }
 }
