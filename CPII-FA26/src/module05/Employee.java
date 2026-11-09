@@ -13,11 +13,11 @@ public class Employee {
     private String lastName;
     private String SSN;
 
-    public Employee(){
-        firstName = "Unknown";
-        lastName = "Unknown";
-        SSN = "Unknown";
-    }
+//    public Employee(){
+//        firstName = "Unknown";
+//        lastName = "Unknown";
+//        SSN = "Unknown";
+//    }
     public Employee(String firstName, String lastName, String SSN) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -51,6 +51,23 @@ public class Employee {
         this.SSN = SSN;
     }
     
+    @Override
+    public  String toString(){
+        return firstName+", "+lastName+", "+SSN;
+    }
     
+    @Override
+    public boolean equals(Object O){
+        Employee emp=null;
+        if (O instanceof Employee){
+            emp = (Employee) O;
+            if(SSN.equals(emp.getSSN()))
+                return true;
+            else 
+                return false;
+        }
+        else
+            return false;
+    }
     
 }
