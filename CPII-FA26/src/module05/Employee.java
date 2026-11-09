@@ -11,7 +11,7 @@ package module05;
 public class Employee {
     private String firstName;
     private String lastName;
-    private String SSN;
+    protected String SSN;
 
 //    public Employee(){
 //        firstName = "Unknown";

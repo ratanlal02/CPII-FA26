@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package module04;
+import module05.Employee;
 
 /**
  *
@@ -20,7 +21,10 @@ public class Driver {
         System.out.println(zelda.bark());
         Dog d = new Dog();
         System.out.println(d.getName());
-        
+        // Protected member can not be accessed beyond
+        // its package
+        //Employee emp = new Employee("A", "B", "3245325");
+        //System.out.println(emp.SSN);
     }
     
 }
