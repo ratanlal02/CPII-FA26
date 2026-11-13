@@ -23,7 +23,7 @@ public class Employee {
         this.lastName = lastName;
         this.SSN = SSN;
     }
-
+    
     public String getFullName(){
         return lastName+", "+firstName;
     }

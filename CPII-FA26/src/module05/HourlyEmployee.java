@@ -8,7 +8,7 @@ package module05;
  *
  * @author RLAL
  */
-public class HourlyEmployee extends Employee{
+public class HourlyEmployee extends Employee implements EmployeeService{
     private double hourlyRate;
     private int hrsWorked;
 
@@ -19,6 +19,7 @@ public class HourlyEmployee extends Employee{
         this.hrsWorked = hrsWorked;
     }
     
+    @Override
     public double calculateWeeklySalary(){
 	double overtime = 0.0;
 	if (hrsWorked > 40){

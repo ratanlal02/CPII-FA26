@@ -17,13 +17,13 @@ public class Main {
 //        System.out.println(objCal.getDataTwo());
 //        System.out.println(objCal.add());
 
-          Employee emp = new Employee("X", "Y", "3245325");
-          Employee emp2 = new Employee("A", "B", "3245325");
-          System.out.println(emp.SSN);
-          HourlyEmployee hrEmp = new HourlyEmployee("A", "B", "3245325", 20, 50);
-          System.out.println(hrEmp.SSN);
-          System.out.println(hrEmp.calculateWeeklySalary());
-          System.out.println(hrEmp.getFullName());
+        Employee emp = new Employee("X", "Y", "3245325");
+        Employee emp2 = new Employee("A", "B", "3245325");
+        System.out.println(emp.SSN);
+        HourlyEmployee hrEmp = new HourlyEmployee("A", "B", "3245325", 20, 50);
+        System.out.println(hrEmp.SSN);
+        System.out.println(hrEmp.calculateWeeklySalary());
+        System.out.println(hrEmp.getFullName());
         System.out.println(emp instanceof Employee);
         System.out.println(emp instanceof HourlyEmployee);
         System.out.println(emp instanceof Object);
